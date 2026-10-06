@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Baseline (BGE-small, 500 tokens)",
+    "split": "dev",
+    "metrics": {
+      "hit_at_1": 0.6875,
+      "hit_at_3": 0.875,
+      "hit_at_5": 0.875,
+      "mrr": 0.78125,
+      "refusal_accuracy": 0.85,
+      "p50_latency": 0.029921412467956543,
+      "p95_latency": 0.08274515867233342,
+      "total_evaluated": 20,
+      "total_answerable": 16,
+      "total_unanswerable": 4
+    }
+  },
+  {
+    "name": "+ chunk 300 / overlap 80",
+    "split": "dev",
+    "metrics": {
+      "hit_at_1": 0.6875,
+      "hit_at_3": 0.875,
+      "hit_at_5": 0.875,
+      "mrr": 0.78125,
+      "refusal_accuracy": 0.85,
+      "p50_latency": 0.020633578300476074,
+      "p95_latency": 0.041421759128570816,
+      "total_evaluated": 20,
+      "total_answerable": 16,
+      "total_unanswerable": 4
+    }
+  },
+  {
+    "name": "+ MiniLM embeddings",
+    "split": "dev",
+    "metrics": {
+      "hit_at_1": 0.3125,
+      "hit_at_3": 0.6875,
+      "hit_at_5": 0.9375,
+      "mrr": 0.5427083333333333,
+      "refusal_accuracy": 0.2,
+      "p50_latency": 0.025887489318847656,
+      "p95_latency": 0.3108605265617373,
+      "total_evaluated": 20,
+      "total_answerable": 16,
+      "total_unanswerable": 4
+    }
+  },
+  {
+    "name": "+ reranker",
+    "split": "dev",
+    "metrics": {
+      "hit_at_1": 0.6875,
+      "hit_at_3": 0.8125,
+      "hit_at_5": 0.875,
+      "mrr": 0.7552083333333334,
+      "refusal_accuracy": 0.85,
+      "p50_latency": 0.2018420696258545,
+      "p95_latency": 0.530281257629395,
+      "total_evaluated": 20,
+      "total_answerable": 16,
+      "total_unanswerable": 4
+    }
+  },
+  {
+    "name": "Final (BGE-small + Metadata Filter)",
+    "split": "test",
+    "metrics": {
+      "hit_at_1": 0.5,
+      "hit_at_3": 0.8333333333333334,
+      "hit_at_5": 0.875,
+      "mrr": 0.6770833333333334,
+      "refusal_accuracy": 0.8666666666666667,
+      "p50_latency": 0.020647406578063965,
+      "p95_latency": 0.03268840312957759,
+      "total_evaluated": 30,
+      "total_answerable": 24,
+      "total_unanswerable": 6
+    }
+  }
+]

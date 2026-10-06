@@ -1,0 +1,51 @@
+# VTU Syllabus & Question-Paper Assistant (RAG) Configuration
+
+app:
+  name: "VTU Syllabus & Question-Paper Assistant"
+  version: "1.0.0"
+  scheme: "2022"
+  branch: "CSE"
+  semester: 5
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  index_dir: "data/index"
+  chunks_file: "data/processed/chunks.jsonl"
+  faiss_index: "data/index/vtu_index.faiss"
+  metadata_file: "data/index/metadata.jsonl"
+  eval_set: "eval/eval_set.yaml"
+  eval_results_dir: "eval/results"
+  query_log_file: "data/query_logs.jsonl"
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 80
+  min_chunk_chars: 30
+
+embedding:
+  model_name: "BAAI/bge-small-en-v1.5"
+  # bge-small recommended query prefix
+  query_prefix: "Represent this sentence for searching relevant passages: "
+  normalize_embeddings: true
+
+retrieval:
+  top_k: 5
+  candidate_k: 30
+  use_metadata_filter: true
+  similarity_metric: "cosine"
+
+reranker:
+  enabled: false
+  model_name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_n: 5
+
+grading:
+  relevance_threshold: 0.45
+  max_retries: 1
+
+llm:
+  provider: "gemini" # gemini | openai | local
+  model: "gemini-2.5-flash"
+  temperature: 0.0
+  max_tokens: 1024

@@ -1,0 +1,497 @@
+# VTU Syllabus & Question-Paper Assistant Evaluation Dataset
+# 50 Gold-labeled questions covering 4 subjects (21CS51, 21CS52, 21CS53, 21CS54)
+# Split: 20 Dev / 30 Test
+
+- id: q001
+  question: "What topics are covered in Module 1 of Software Engineering 21CS51?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 1
+      doc_type: "syllabus"
+  split: dev
+
+- id: q002
+  question: "Which module covers Requirements Engineering and System Modeling in 21CS51?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 2
+      doc_type: "syllabus"
+  split: test
+
+- id: q003
+  question: "Where can I find Software Testing and Architectural Design in the SEPM syllabus?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 3
+      doc_type: "syllabus"
+  split: dev
+
+- id: q004
+  question: "Which module covers COCOMO II cost estimation and Project Planning in 21CS51?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 4
+      doc_type: "syllabus"
+  split: test
+
+- id: q005
+  question: "Which module covers Risk Management and Quality Assurance in Software Engineering?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q006
+  question: "What are the contents of Module 1 in Computer Networks 21CS52?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 1
+      doc_type: "syllabus"
+  split: dev
+
+- id: q007
+  question: "Which module explains DNS, HTTP, and Socket Programming in 21CS52?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 2
+      doc_type: "syllabus"
+  split: test
+
+- id: q008
+  question: "In which module of Computer Networks are TCP congestion control and UDP covered?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 3
+      doc_type: "syllabus"
+  split: dev
+
+- id: q009
+  question: "Which module covers Distance Vector routing, OSPF, and IPv4 addressing in 21CS52?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 4
+      doc_type: "syllabus"
+  split: test
+
+- id: q010
+  question: "Where is CRC error detection and CSMA/CD taught in Computer Networks?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q011
+  question: "What topics are in Module 1 of Database Management Systems 21CS53?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 1
+      doc_type: "syllabus"
+  split: dev
+
+- id: q012
+  question: "Which module covers Relational Algebra and SQL queries in 21CS53?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 2
+      doc_type: "syllabus"
+  split: test
+
+- id: q013
+  question: "Which module covers Normalization and BCNF in DBMS 21CS53?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 3
+      doc_type: "syllabus"
+  split: dev
+
+- id: q014
+  question: "In which module are ACID properties and Two-Phase Locking (2PL) discussed in 21CS53?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 4
+      doc_type: "syllabus"
+  split: test
+
+- id: q015
+  question: "Which module covers B+ Trees indexing and Write-Ahead Logging in 21CS53?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q016
+  question: "Which module covers Heuristic Search and A* algorithm in AIML 21CS54?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 1
+      doc_type: "syllabus"
+  split: dev
+
+- id: q017
+  question: "Where can I find Predicate Logic and Resolution in the 21CS54 syllabus?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 2
+      doc_type: "syllabus"
+  split: test
+
+- id: q018
+  question: "Which module covers Minimax Search and Alpha-Beta Cutoffs in 21CS54?"
+  type: syllabus_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 3
+      doc_type: "syllabus"
+  split: test
+
+- id: q019
+  question: "Which PYQs asked about the Waterfall model in Software Engineering?"
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 1
+      doc_type: "pyq"
+  split: dev
+
+- id: q020
+  question: "Show previous year questions on Scrum framework for 21CS51."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 1
+      doc_type: "pyq"
+  split: dev
+
+- id: q021
+  question: "Find PYQ questions regarding Functional vs Non-functional requirements in 21CS51."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 2
+      doc_type: "pyq"
+  split: dev
+
+- id: q022
+  question: "Show questions asked on MVC pattern and Unit testing in 21CS51 exams."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 3
+      doc_type: "pyq"
+  split: test
+
+- id: q023
+  question: "Which past paper asked to explain COCOMO II estimation model?"
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 4
+      doc_type: "pyq"
+  split: test
+
+- id: q024
+  question: "Find past exam questions on Packet Switching vs Circuit Switching in 21CS52."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 1
+      doc_type: "pyq"
+  split: dev
+
+- id: q025
+  question: "Show past exam questions on HTTP persistent connections and web caching."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 2
+      doc_type: "pyq"
+  split: test
+
+- id: q026
+  question: "Which PYQ asked to compare Go-Back-N and Selective Repeat sliding window protocols?"
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 3
+      doc_type: "pyq"
+  split: dev
+
+- id: q027
+  question: "Show past exam questions on Dijkstra's Link-State algorithm in 21CS52."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 4
+      doc_type: "pyq"
+  split: test
+
+- id: q028
+  question: "Which past year questions asked to explain CRC error detection?"
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 5
+      doc_type: "pyq"
+  split: test
+
+- id: q029
+  question: "Show past questions on Three-Schema Architecture in DBMS exams."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 1
+      doc_type: "pyq"
+  split: dev
+
+- id: q030
+  question: "Find exam questions on 1NF, 2NF, 3NF and Functional Dependencies in 21CS53."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 3
+      doc_type: "pyq"
+  split: test
+
+- id: q031
+  question: "Show questions on Two-Phase Locking 2PL protocol in DBMS."
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 4
+      doc_type: "pyq"
+  split: test
+
+- id: q032
+  question: "Which PYQ asked to prove admissibility of A* search algorithm?"
+  type: pyq_lookup
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 1
+      doc_type: "pyq"
+  split: test
+
+- id: q033
+  question: "How does testing in Module 3 differ from verification and quality standards in Module 5 of 21CS51?"
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 3
+      doc_type: "syllabus"
+    - subject_code: "21CS51"
+      module: 5
+      doc_type: "syllabus"
+  split: dev
+
+- id: q034
+  question: "Compare reliable transport mechanisms in Module 3 with error detection CRC in Module 5 of 21CS52."
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 3
+      doc_type: "syllabus"
+    - subject_code: "21CS52"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q035
+  question: "How does ER modeling in Module 1 relate to Relational Schema and SQL in Module 2 of 21CS53?"
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 1
+      doc_type: "syllabus"
+    - subject_code: "21CS53"
+      module: 2
+      doc_type: "syllabus"
+  split: dev
+
+- id: q036
+  question: "Compare Heuristic State Search in Module 1 with Planning in Module 3 of AIML 21CS54."
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 1
+      doc_type: "syllabus"
+    - subject_code: "21CS54"
+      module: 3
+      doc_type: "syllabus"
+  split: test
+
+- id: q037
+  question: "What are the connections between Agile planning in Module 1 and Risk planning in Module 5 of SEPM?"
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS51"
+      module: 1
+      doc_type: "syllabus"
+    - subject_code: "21CS51"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q038
+  question: "How does TCP connection management in Module 3 relate to socket programming in Module 2 of Computer Networks?"
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS52"
+      module: 2
+      doc_type: "syllabus"
+    - subject_code: "21CS52"
+      module: 3
+      doc_type: "syllabus"
+  split: test
+
+- id: q039
+  question: "Compare concurrency control in Module 4 with recovery checkpointing in Module 5 of DBMS 21CS53."
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS53"
+      module: 4
+      doc_type: "syllabus"
+    - subject_code: "21CS53"
+      module: 5
+      doc_type: "syllabus"
+  split: dev
+
+- id: q040
+  question: "Compare decision tree learning in Module 4 with neural network backpropagation in Module 5 of 21CS54."
+  type: cross_module
+  answerable: true
+  gold:
+    - subject_code: "21CS54"
+      module: 4
+      doc_type: "syllabus"
+    - subject_code: "21CS54"
+      module: 5
+      doc_type: "syllabus"
+  split: test
+
+- id: q041
+  question: "What is the syllabus for Fluid Mechanics and Thermodynamics in VTU Mechanical Engineering?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: dev
+
+- id: q042
+  question: "Give me the official model answer key with step marks for the 2024 VTU exam."
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q043
+  question: "Which module in 21CS52 covers Quantum Cryptography and Quantum Key Distribution?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: dev
+
+- id: q044
+  question: "What are the lab experiments for Microcontroller 8051 assembly language in 6th semester?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q045
+  question: "What is the passing marks cutoff and grace mark policy for VTU CBCS 2022 scheme?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q046
+  question: "Which module covers Blockchain smart contract programming in Solidity for 21CS51?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: dev
+
+- id: q047
+  question: "What questions were asked in the 2012 syllabus paper for Electrical Machine Design?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q048
+  question: "Who is the VTU vice chancellor and what is the revaluation fee for 5th semester?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q049
+  question: "Show past questions on Aerodynamic Propulsion and Gas Turbine mechanics."
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: test
+
+- id: q050
+  question: "What is the exam schedule and timetable for 8th semester ISE exams in July 2027?"
+  type: unanswerable
+  answerable: false
+  gold: []
+  split: dev

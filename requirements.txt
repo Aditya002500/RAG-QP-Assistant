@@ -1,0 +1,28 @@
+# Core framework
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langgraph>=0.2.0
+langchain-google-genai>=2.0.0
+langchain-openai>=0.2.0
+
+# PDF & OCR
+pymupdf>=1.24.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Embeddings & Vector Index
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+torch>=2.2.0
+
+# App & Utilities
+streamlit>=1.35.0
+pydantic>=2.7.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+
+# Quality & Testing
+pytest>=8.2.0
+ruff>=0.5.0

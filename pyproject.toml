@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vtu-rag"
+version = "1.0.0"
+description = "VTU Syllabus & Question-Paper Assistant (RAG)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Aditya Kumar" }
+]
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langgraph>=0.2.0",
+    "sentence-transformers>=3.0.0",
+    "faiss-cpu>=1.8.0",
+    "pymupdf>=1.24.0",
+    "pytesseract>=0.3.10",
+    "streamlit>=1.35.0",
+    "pydantic>=2.7.0",
+    "pyyaml>=6.0.1",
+    "python-dotenv>=1.0.1",
+    "pytest>=8.2.0",
+    "ruff>=0.5.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff.lint]
+ignore = ["BLE001"]
+
